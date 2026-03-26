@@ -8,3 +8,58 @@
   <p>This is my first real website!</p>
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      background: #111;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      background: #00bcd4;
+      padding: 20px;
+      font-size: 24px;
+    }
+
+    section {
+      padding: 40px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      background: #00bcd4;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background: #0097a7;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    My First Website 🚀
+  </header>
+
+  <section>
+    <h1>Hi, I'm Timszy 👋</h1>
+    <p>Welcome to my website. I just built this using GitHub!</p>
+    
+    <button onclick="alert('Thanks for visiting!')">
+      Click Me
+    </button>
+  </section>
+
+</body>
+</html>
