@@ -96,7 +96,7 @@
     <p>I build cool things with code. This is my official website 🔥</p>
 
     <!-- WHATSAPP BUTTON -->
-    <a href="https://wa.me/234XXXXXXXXXX" class="btn whatsapp">
+    <a href="https://wa.me/2348080171998" class="btn whatsapp">
       Chat me on WhatsApp 💬
     </a>
 
