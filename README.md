@@ -1,33 +1,31 @@
-# TIMSZYSHAKS 
+# TIMSZYSHAK ☠️
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Timszy Website</title>
+  <title>Timszy | Developer</title>
 
   <style>
     body {
       margin: 0;
       font-family: Arial;
-      background: linear-gradient(135deg, #0f172a, #020617);
+      background: #0a0f1c;
       color: white;
       text-align: center;
     }
 
     header {
-      background: #06b6d4;
       padding: 20px;
-      font-size: 26px;
+      font-size: 28px;
       font-weight: bold;
-      box-shadow: 0 0 20px #06b6d4;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
     }
 
     img {
-      width: 120px;
-      height: 120px;
+      width: 130px;
+      height: 130px;
       border-radius: 50%;
       margin-top: 20px;
-      border: 3px solid #06b6d4;
-      box-shadow: 0 0 20px #06b6d4;
+      border: 3px solid #00c6ff;
     }
 
     section {
@@ -35,19 +33,27 @@
     }
 
     h1 {
-      font-size: 32px;
-      margin-top: 10px;
+      font-size: 30px;
     }
 
     p {
       color: #ccc;
-      font-size: 18px;
+      font-size: 17px;
+    }
+
+    .card {
+      background: #111827;
+      margin: 15px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
     }
 
     .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 25px;
+      display: block;
+      margin: 10px auto;
+      padding: 12px;
+      width: 80%;
       border-radius: 8px;
       text-decoration: none;
       color: white;
@@ -59,24 +65,19 @@
       background: #25D366;
     }
 
-    .whatsapp:hover {
-      background: #1ebe5d;
-      box-shadow: 0 0 15px #25D366;
+    .telegram {
+      background: #0088cc;
     }
 
-    .cool {
-      background: #06b6d4;
-    }
-
-    .cool:hover {
-      background: #0891b2;
-      box-shadow: 0 0 15px #06b6d4;
+    .btn:hover {
+      opacity: 0.8;
     }
 
     footer {
-      margin-top: 40px;
+      margin-top: 30px;
       padding: 20px;
       background: #020617;
+      font-size: 14px;
       color: #888;
     }
   </style>
@@ -85,33 +86,37 @@
 <body>
 
   <header>
-    TIMSZYSHAKs 🚀
+    TIMSZY 👑
   </header>
 
   <!-- PROFILE IMAGE -->
-  <img src="https://i.imgur.com/2yaf2wb.png" alt="profile">
+  <img src="https://github.com/timszy001.png" alt="profile">
 
   <section>
     <h1>Hi, I'm Timszy 👋</h1>
-    <p>I build cool things with code. This is my official website 🔥</p>
+    <p>Welcome to my official website. I build cool and powerful things 🚀</p>
+  </section>
 
-    <!-- WHATSAPP BUTTON -->
+  <!-- CONTACT CARDS -->
+  <div class="card">
+    <h2>Contact Me</h2>
+
     <a href="https://wa.me/2348080171998" class="btn whatsapp">
-      Chat me on WhatsApp 💬
+      💬 Chat me on WhatsApp
     </a>
 
-    <!-- EXTRA BUTTON -->
-    <a href="#" class="btn cool">
-      View My Work 🚀
+    <a href="https://t.me/OMEGAPROWIN2" class="btn telegram">
+      📢 Join my Telegram Channel
     </a>
-  </section>
+  </div>
 
-  <section>
-    <h1>About Me</h1>
+  <div class="card">
+    <h2>About Me</h2>
     <p>
-      I’m a developer in the making. I love building websites and learning new things every day.
+      I'm a growing developer focused on building clean and powerful web experiences.
+      This site is hosted using GitHub Pages 🔥
     </p>
-  </section>
+  </div>
 
   <footer>
     © 2026 Timszy | Built with GitHub Pages 💻
