@@ -1,4 +1,4 @@
-# TIMSZYSHAK ☠️
+# 🖇️TIMSZYSHAK🖇️
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,54 +7,51 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial;
-      background: #0a0f1c;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(circle at top, #0f172a, #020617);
       color: white;
       text-align: center;
     }
 
     header {
-      padding: 20px;
-      font-size: 28px;
+      padding: 25px;
+      font-size: 30px;
       font-weight: bold;
-      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      color: #38bdf8;
+      text-shadow: 0 0 15px #38bdf8;
     }
 
     img {
       width: 130px;
       height: 130px;
       border-radius: 50%;
+      border: 3px solid #38bdf8;
+      box-shadow: 0 0 20px #38bdf8;
       margin-top: 20px;
-      border: 3px solid #00c6ff;
     }
 
-    section {
-      padding: 30px;
-    }
-
-    h1 {
-      font-size: 30px;
+    #typing {
+      font-size: 28px;
+      margin-top: 20px;
+      color: #e2e8f0;
     }
 
     p {
-      color: #ccc;
-      font-size: 17px;
+      color: #94a3b8;
+      font-size: 16px;
     }
 
-    .card {
-      background: #111827;
-      margin: 15px;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    .container {
+      padding: 30px;
     }
 
     .btn {
       display: block;
-      margin: 10px auto;
-      padding: 12px;
+      margin: 12px auto;
+      padding: 14px;
       width: 80%;
-      border-radius: 8px;
+      max-width: 300px;
+      border-radius: 10px;
       text-decoration: none;
       color: white;
       font-size: 16px;
@@ -66,19 +63,30 @@
     }
 
     .telegram {
-      background: #0088cc;
+      background: #0ea5e9;
     }
 
     .btn:hover {
-      opacity: 0.8;
+      transform: scale(1.05);
+      box-shadow: 0 0 15px white;
+    }
+
+    .card {
+      margin: 20px auto;
+      padding: 20px;
+      width: 85%;
+      max-width: 400px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
     }
 
     footer {
       margin-top: 30px;
       padding: 20px;
-      background: #020617;
+      color: #64748b;
       font-size: 14px;
-      color: #888;
     }
   </style>
 </head>
@@ -86,41 +94,54 @@
 <body>
 
   <header>
-    TIMSZY 👑
+    TIMSZY ⚡
   </header>
 
-  <!-- PROFILE IMAGE -->
   <img src="https://github.com/timszy001.png" alt="profile">
 
-  <section>
-    <h1>Hi, I'm Timszy 👋</h1>
-    <p>Welcome to my official website. I build cool and powerful things 🚀</p>
-  </section>
+  <div class="container">
+    <h1 id="typing"></h1>
+    <p>I build clean, powerful and modern websites 🚀</p>
+  </div>
 
-  <!-- CONTACT CARDS -->
   <div class="card">
-    <h2>Contact Me</h2>
+    <h2>Connect With Me</h2>
 
     <a href="https://wa.me/2348080171998" class="btn whatsapp">
-      💬 Chat me on WhatsApp
+      💬 WhatsApp Me
     </a>
 
     <a href="https://t.me/OMEGAPROWIN2" class="btn telegram">
-      📢 Join my Telegram Channel
+      📢 Telegram Channel
     </a>
   </div>
 
   <div class="card">
     <h2>About Me</h2>
     <p>
-      I'm a growing developer focused on building clean and powerful web experiences.
-      This site is hosted using GitHub Pages 🔥
+      I'm Timszy, a developer building next-level digital experiences.
+      I focus on clean design, speed, and creativity.
     </p>
   </div>
 
   <footer>
-    © 2026 Timszy | Built with GitHub Pages 💻
+    © 2026 Timszy • All Rights Reserved
   </footer>
+
+  <script>
+    const text = "Hi, I'm Timszy 👋";
+    let i = 0;
+
+    function type() {
+      if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(type, 70);
+      }
+    }
+
+    type();
+  </script>
 
 </body>
 </html>
