@@ -3,11 +3,12 @@
 <html>
 <head>
   <title>Timszy Website</title>
+
   <style>
     body {
       margin: 0;
       font-family: Arial;
-      background: #0f172a;
+      background: linear-gradient(135deg, #0f172a, #020617);
       color: white;
       text-align: center;
     }
@@ -17,65 +18,103 @@
       padding: 20px;
       font-size: 26px;
       font-weight: bold;
+      box-shadow: 0 0 20px #06b6d4;
+    }
+
+    img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-top: 20px;
+      border: 3px solid #06b6d4;
+      box-shadow: 0 0 20px #06b6d4;
     }
 
     section {
-      padding: 40px 20px;
+      padding: 30px;
     }
 
     h1 {
       font-size: 32px;
+      margin-top: 10px;
     }
 
     p {
-      font-size: 18px;
       color: #ccc;
+      font-size: 18px;
     }
 
     .btn {
       display: inline-block;
-      margin-top: 20px;
+      margin: 10px;
       padding: 12px 25px;
-      background: #06b6d4;
-      color: white;
-      text-decoration: none;
       border-radius: 8px;
+      text-decoration: none;
+      color: white;
       font-size: 16px;
+      transition: 0.3s;
     }
 
-    .btn:hover {
+    .whatsapp {
+      background: #25D366;
+    }
+
+    .whatsapp:hover {
+      background: #1ebe5d;
+      box-shadow: 0 0 15px #25D366;
+    }
+
+    .cool {
+      background: #06b6d4;
+    }
+
+    .cool:hover {
       background: #0891b2;
+      box-shadow: 0 0 15px #06b6d4;
     }
 
     footer {
       margin-top: 40px;
       padding: 20px;
       background: #020617;
-      font-size: 14px;
       color: #888;
     }
   </style>
 </head>
+
 <body>
 
   <header>
     TIMSZYSHAKs 🚀
   </header>
 
+  <!-- PROFILE IMAGE -->
+  <img src="https://i.imgur.com/2yaf2wb.png" alt="profile">
+
   <section>
     <h1>Hi, I'm Timszy 👋</h1>
-    <p>I just built my first website using GitHub Pages!</p>
+    <p>I build cool things with code. This is my official website 🔥</p>
 
-    <a href="#" class="btn">Contact Me</a>
+    <!-- WHATSAPP BUTTON -->
+    <a href="https://wa.me/234XXXXXXXXXX" class="btn whatsapp">
+      Chat me on WhatsApp 💬
+    </a>
+
+    <!-- EXTRA BUTTON -->
+    <a href="#" class="btn cool">
+      View My Work 🚀
+    </a>
   </section>
 
   <section>
     <h1>About Me</h1>
-    <p>I am learning web development and building cool things step by step.</p>
+    <p>
+      I’m a developer in the making. I love building websites and learning new things every day.
+    </p>
   </section>
 
   <footer>
-    © 2026 Timszy | My First Website
+    © 2026 Timszy | Built with GitHub Pages 💻
   </footer>
 
 </body>
