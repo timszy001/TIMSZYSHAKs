@@ -1,147 +1,145 @@
 # 🖇️TIMSZYSHAK🖇️
+
 <!DOCTYPE html>
 <html>
 <head>
   <title>Timszy | Developer</title>
 
+  <!-- FIX MOBILE ZOOM -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: radial-gradient(circle at top, #0f172a, #020617);
+      font-family: Arial;
+      background: black;
       color: white;
       text-align: center;
+      overflow-x: hidden;
+    }
+
+    /* STARS BACKGROUND */
+    body::before {
+      content: "";
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: url("https://www.transparenttextures.com/patterns/stardust.png");
+      animation: move 60s linear infinite;
+      z-index: -1;
+    }
+
+    @keyframes move {
+      from {background-position: 0 0;}
+      to {background-position: 1000px 1000px;}
     }
 
     header {
-      padding: 25px;
-      font-size: 30px;
-      font-weight: bold;
-      color: #38bdf8;
-      text-shadow: 0 0 15px #38bdf8;
+      padding: 20px;
+      font-size: 26px;
+      color: #00f7ff;
     }
 
     img {
-      width: 130px;
-      height: 130px;
+      width: 110px;
+      height: 110px;
       border-radius: 50%;
-      border: 3px solid #38bdf8;
-      box-shadow: 0 0 20px #38bdf8;
-      margin-top: 20px;
+      border: 2px solid #00f7ff;
+      margin-top: 10px;
     }
 
     #typing {
-      font-size: 28px;
-      margin-top: 20px;
-      color: #e2e8f0;
-    }
-
-    p {
-      color: #94a3b8;
-      font-size: 16px;
+      font-size: 22px;
+      margin: 15px;
     }
 
     .container {
-      padding: 30px;
+      padding: 15px;
     }
 
     .btn {
       display: block;
-      margin: 12px auto;
-      padding: 14px;
-      width: 80%;
+      margin: 10px auto;
+      padding: 12px;
+      width: 90%;
       max-width: 300px;
-      border-radius: 10px;
+      border-radius: 8px;
       text-decoration: none;
       color: white;
-      font-size: 16px;
-      transition: 0.3s;
     }
 
-    .whatsapp {
-      background: #25D366;
-    }
-
-    .telegram {
-      background: #0ea5e9;
-    }
-
-    .btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 15px white;
-    }
+    .whatsapp { background: #25D366; }
+    .telegram { background: #0088cc; }
 
     .card {
-      margin: 20px auto;
-      padding: 20px;
-      width: 85%;
-      max-width: 400px;
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 15px;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      background: rgba(255,255,255,0.05);
+      margin: 15px;
+      padding: 15px;
+      border-radius: 10px;
     }
 
     footer {
-      margin-top: 30px;
-      padding: 20px;
-      color: #64748b;
-      font-size: 14px;
+      margin: 20px;
+      font-size: 13px;
+      color: #aaa;
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    TIMSZY ⚡
-  </header>
+  <header>TIMSZY 🚀</header>
 
-  <img src="https://github.com/timszy001.png" alt="profile">
+  <img src="https://github.com/timszy001.png">
+
+  <h1 id="typing"></h1>
 
   <div class="container">
-    <h1 id="typing"></h1>
-    <p>I build clean, powerful and modern websites 🚀</p>
+
+    <div class="card">
+      <a href="https://wa.me/2348080171998" class="btn whatsapp">WhatsApp Me</a>
+      <a href="https://t.me/OMEGAPROWIN2" class="btn telegram">Telegram Channel</a>
+    </div>
+
+    <div class="card">
+      <h3>My Projects</h3>
+      <p>Coming soon... 🚀</p>
+    </div>
+
+    <div class="card">
+      <h3>Chat Bot 🤖</h3>
+      <input id="userInput" placeholder="Type something..." style="width:80%;padding:10px;border-radius:5px;">
+      <button onclick="reply()">Send</button>
+      <p id="botReply"></p>
+    </div>
+
   </div>
 
-  <div class="card">
-    <h2>Connect With Me</h2>
+  <footer>© 2026 Timszy</footer>
 
-    <a href="https://wa.me/2348080171998" class="btn whatsapp">
-      💬 WhatsApp Me
-    </a>
-
-    <a href="https://t.me/OMEGAPROWIN2" class="btn telegram">
-      📢 Telegram Channel
-    </a>
-  </div>
-
-  <div class="card">
-    <h2>About Me</h2>
-    <p>
-      I'm Timszy, a developer building next-level digital experiences.
-      I focus on clean design, speed, and creativity.
-    </p>
-  </div>
-
-  <footer>
-    © 2026 Timszy • All Rights Reserved
-  </footer>
-
+  <!-- TYPING EFFECT -->
   <script>
-    const text = "Hi, I'm Timszy 👋";
+    let text = "Hi, I'm Timszy 👋";
     let i = 0;
-
     function type() {
-      if (i < text.length) {
+      if(i < text.length){
         document.getElementById("typing").innerHTML += text.charAt(i);
         i++;
         setTimeout(type, 70);
       }
     }
-
     type();
+
+    function reply(){
+      let input = document.getElementById("userInput").value;
+      document.getElementById("botReply").innerText = "You said: " + input;
+    }
   </script>
+
+  <!-- MUSIC (ASAKE) -->
+  <audio autoplay loop>
+    <source src="PUT-YOUR-ASAKE-SONG-LINK.mp3" type="audio/mpeg">
+  </audio>
 
 </body>
 </html>
