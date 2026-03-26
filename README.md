@@ -1,11 +1,10 @@
-# 🖇️TIMSZYSHAK🖇️
-
+# 🖇️TIMSZYSHAKs🖇️
+Website 🪄
 <!DOCTYPE html>
 <html>
 <head>
   <title>Timszy | Developer</title>
 
-  <!-- FIX MOBILE ZOOM -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -18,20 +17,8 @@
       overflow-x: hidden;
     }
 
-    /* STARS BACKGROUND */
-    body::before {
-      content: "";
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      background: url("https://www.transparenttextures.com/patterns/stardust.png");
-      animation: move 60s linear infinite;
-      z-index: -1;
-    }
-
-    @keyframes move {
-      from {background-position: 0 0;}
-      to {background-position: 1000px 1000px;}
+    iframe {
+      display: none;
     }
 
     header {
@@ -53,8 +40,11 @@
       margin: 15px;
     }
 
-    .container {
+    .card {
+      background: rgba(255,255,255,0.05);
+      margin: 15px;
       padding: 15px;
+      border-radius: 10px;
     }
 
     .btn {
@@ -71,11 +61,19 @@
     .whatsapp { background: #25D366; }
     .telegram { background: #0088cc; }
 
-    .card {
-      background: rgba(255,255,255,0.05);
-      margin: 15px;
-      padding: 15px;
-      border-radius: 10px;
+    input {
+      padding: 10px;
+      width: 70%;
+      border-radius: 5px;
+      border: none;
+    }
+
+    button {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background: #00f7ff;
+      color: black;
     }
 
     footer {
@@ -88,58 +86,22 @@
 
 <body>
 
+  <!-- 🎵 ASAKE MUSIC -->
+  <iframe src="https://www.youtube.com/embed/9f2lq7Q0n8k?autoplay=1&loop=1&playlist=9f2lq7Q0n8k"></iframe>
+
   <header>TIMSZY 🚀</header>
 
   <img src="https://github.com/timszy001.png">
 
   <h1 id="typing"></h1>
 
-  <div class="container">
-
-    <div class="card">
-      <a href="https://wa.me/2348080171998" class="btn whatsapp">WhatsApp Me</a>
-      <a href="https://t.me/OMEGAPROWIN2" class="btn telegram">Telegram Channel</a>
-    </div>
-
-    <div class="card">
-      <h3>My Projects</h3>
-      <p>Coming soon... 🚀</p>
-    </div>
-
-    <div class="card">
-      <h3>Chat Bot 🤖</h3>
-      <input id="userInput" placeholder="Type something..." style="width:80%;padding:10px;border-radius:5px;">
-      <button onclick="reply()">Send</button>
-      <p id="botReply"></p>
-    </div>
-
+  <div class="card">
+    <a href="https://wa.me/2348080171998" class="btn whatsapp">💬 WhatsApp Me</a>
+    <a href="https://t.me/OMEGAPROWIN2" class="btn telegram">📢 Telegram Channel</a>
   </div>
 
-  <footer>© 2026 Timszy</footer>
-
-  <!-- TYPING EFFECT -->
-  <script>
-    let text = "Hi, I'm Timszy 👋";
-    let i = 0;
-    function type() {
-      if(i < text.length){
-        document.getElementById("typing").innerHTML += text.charAt(i);
-        i++;
-        setTimeout(type, 70);
-      }
-    }
-    type();
-
-    function reply(){
-      let input = document.getElementById("userInput").value;
-      document.getElementById("botReply").innerText = "You said: " + input;
-    }
-  </script>
-
-  <!-- MUSIC (ASAKE) -->
-  <audio autoplay loop>
-    <source src="PUT-YOUR-ASAKE-SONG-LINK.mp3" type="audio/mpeg">
-  </audio>
-
-</body>
-</html>
+  <!-- 💼 PROJECTS -->
+  <div class="card">
+    <h3>My Projects 🚀</h3>
+    <p>🔥 Personal Website (this one)</p>
+    <
